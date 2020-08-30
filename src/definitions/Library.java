@@ -17,4 +17,8 @@ public class Library {
             this.booksThatAreCurrentlyAvailable[MAXIMUM_BOOKS_IN_LIBRARY] = new Book();
         }
     }
+    //parametrized constructor
+    public Library(Book[] booksThatAreCurrentlyAvailable){
+        this.booksThatAreCurrentlyAvailable = booksThatAreCurrentlyAvailable;
+    }
 }
