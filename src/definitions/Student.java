@@ -36,4 +36,20 @@ public class Student {
         this.numberOfBooksIssuedByTheStudent = numberOfBooksIssuedByTheStudent;
         this.theNamesOfTheBooksIssuedByTheStudent = theNamesOfTheBooksIssuedByTheStudent;
     }
+
+    public String getNameOfTheStudent() {
+        return nameOfTheStudent;
+    }
+
+    public long getUniversityRollNumberOfTheStudent() {
+        return universityRollNumberOfTheStudent;
+    }
+
+    public int getNumberOfBooksIssuedByTheStudent() {
+        return numberOfBooksIssuedByTheStudent;
+    }
+
+    public Book[] getTheNamesOfTheBooksIssuedByTheStudent() {
+        return theNamesOfTheBooksIssuedByTheStudent;
+    }
 }
