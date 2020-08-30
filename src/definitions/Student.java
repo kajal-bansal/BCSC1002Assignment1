@@ -129,6 +129,19 @@ public class Student {
         }
         return returnSuccessful;
     }
-
-
+    /**
+     * This method will show all the books which is issued by the Student.
+     */
+    public void showIssuedBooksByStudent() {
+        if (getNumberOfBooksIssuedByTheStudent() == 0) {
+            System.out.println("Sorry, you haven't issued any book yet.");
+        } else {
+            System.out.println("These are the books issued by you: ");
+            for (int issuedBook = 0; issuedBook < MAXIMUM_NO_OF_BOOKS_CAN_ISSUE; issuedBook++) {
+                if (theNamesOfTheBooksIssuedByTheStudent[issuedBook].getNameOfTheBook() != null) {
+                    System.out.print(theNamesOfTheBooksIssuedByTheStudent[issuedBook].getNameOfTheBook() + (issuedBook < getNumberOfBooksIssuedByTheStudent() - 1 ? ", " : ".\n"));
+                }
+            }
+        }
+    }
 }
