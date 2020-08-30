@@ -10,4 +10,11 @@ public class Book {
     private String nameOfTheBook;
     private String nsmeOfTheAuthorOfTheBook;
     private String thirteenDigitISBNNumberOfTheBook;
+
+//non-parametrized constructor
+public Book() {
+    this.nameOfTheBook = "null";
+    this.nsmeOfTheAuthorOfTheBook = "null";
+    this.thirteenDigitISBNNumberOfTheBook = "null";
+}
 }
