@@ -26,5 +26,14 @@ public class Student {
             this.theNamesOfTheBooksIssuedByTheStudent[i] = new Book();
         }
     }
-
+    //parametrized constructor
+    public Student(String nameOfTheStudent,
+                   long universityRollNumberOfTheStudent,
+                   int numberOfBooksIssuedByTheStudent,
+                   Book[] theNamesOfTheBooksIssuedByTheStudent){
+        this.nameOfTheStudent = nameOfTheStudent;
+        this.universityRollNumberOfTheStudent = universityRollNumberOfTheStudent;
+        this.numberOfBooksIssuedByTheStudent = numberOfBooksIssuedByTheStudent;
+        this.theNamesOfTheBooksIssuedByTheStudent = theNamesOfTheBooksIssuedByTheStudent;
+    }
 }
