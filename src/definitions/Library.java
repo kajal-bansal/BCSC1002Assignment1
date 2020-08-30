@@ -9,4 +9,12 @@ package definitions;
 public class Library {
     public static final int MAXIMUM_BOOKS_IN_LIBRARY = 4;
     public Book[] booksThatAreCurrentlyAvailable;
+
+    //non-parameterized constructor
+    public Library(){
+        this.booksThatAreCurrentlyAvailable = new Book[MAXIMUM_BOOKS_IN_LIBRARY];
+        for (int libraryIndex = 0; libraryIndex < MAXIMUM_BOOKS_IN_LIBRARY; libraryIndex++) {
+            this.booksThatAreCurrentlyAvailable[MAXIMUM_BOOKS_IN_LIBRARY] = new Book();
+        }
+    }
 }
