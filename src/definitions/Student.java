@@ -96,4 +96,15 @@ public class Student {
         result = 31 * result + Arrays.hashCode(theNamesOfTheBooksIssuedByTheStudent);
         return result;
     }
+    /**
+     * This method will issue the books to the Student.
+     *
+     * @param bookIssuingNumber The number of the book is issuing.
+     * @param bookName         The name of the book which is issuing.
+     */
+    public void issueBooksToStudents(int bookIssuingNumber, String bookName) {
+        theNamesOfTheBooksIssuedByTheStudent[bookIssuingNumber].setNameOfTheBook(bookName);
+    }
+
+
 }
