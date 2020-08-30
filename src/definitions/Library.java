@@ -21,4 +21,9 @@ public class Library {
     public Library(Book[] booksThatAreCurrentlyAvailable){
         this.booksThatAreCurrentlyAvailable = booksThatAreCurrentlyAvailable;
     }
+
+    public Book[] getBooksThatAreCurrentlyAvailable() {
+        return booksThatAreCurrentlyAvailable;
+    }
+
 }
