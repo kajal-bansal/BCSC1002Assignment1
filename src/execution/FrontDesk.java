@@ -20,5 +20,9 @@ public class FrontDesk {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int studentChoice;
+        Student student = new Student();
+        Library library = new Library();
+        library.setMaximumBooksInLibrary();
+        String bookName;
 
     }
