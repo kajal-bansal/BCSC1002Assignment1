@@ -16,4 +16,9 @@ public class FrontDesk {
     public static final int RETURN_A_PREVIOUSLY_ISSUES_BOOK = 2;
     public static final int SHOW_ALL_THE_ISSUES_BOOK = 3;
     public static final int EXIT = 4;
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int studentChoice;
+
     }
