@@ -79,5 +79,5 @@ public class FrontDesk {
         } while (studentChoice != EXIT);
         scanner.close();
     }
-
+}
 
