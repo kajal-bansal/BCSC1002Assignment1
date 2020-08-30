@@ -16,7 +16,7 @@ public class Library {
     public Library() {
         this.booksThatAreCurrentlyAvailable = new Book[MAXIMUM_BOOKS_IN_LIBRARY];
         for (int libraryIndex = 0; libraryIndex < MAXIMUM_BOOKS_IN_LIBRARY; libraryIndex++) {
-            this.booksThatAreCurrentlyAvailable[MAXIMUM_BOOKS_IN_LIBRARY] = new Book();
+            this.booksThatAreCurrentlyAvailable[libraryIndex] = new Book();
         }
     }
 

@@ -6,7 +6,14 @@
  * */
 package execution;
 
+import definitions.Student;
+import definitions.Library;
+
+import java.util.Scanner;
+
 public class FrontDesk {
-    public static void main(String[] args) {
+    public static final int ISSUE_A_NEW_BOOK = 1;
+    public static final int RETURN_A_PREVIOUSLY_ISSUES_BOOK = 2;
+    public static final int SHOW_ALL_THE_ISSUES_BOOK = 3;
+    public static final int EXIT = 4;
     }
-}
