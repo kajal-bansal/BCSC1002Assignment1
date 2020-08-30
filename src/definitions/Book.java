@@ -7,5 +7,7 @@
 package definitions;
 
 public class Book {
-
+    private String nameOfTheBook;
+    private String nsmeOfTheAuthorOfTheBook;
+    private String thirteenDigitISBNNumberOfTheBook;
 }
