@@ -13,14 +13,15 @@ public class Library {
     public Book[] booksThatAreCurrentlyAvailable;
 
     //non-parameterized constructor
-    public Library(){
+    public Library() {
         this.booksThatAreCurrentlyAvailable = new Book[MAXIMUM_BOOKS_IN_LIBRARY];
         for (int libraryIndex = 0; libraryIndex < MAXIMUM_BOOKS_IN_LIBRARY; libraryIndex++) {
             this.booksThatAreCurrentlyAvailable[MAXIMUM_BOOKS_IN_LIBRARY] = new Book();
         }
     }
+
     //parametrized constructor
-    public Library(Book[] booksThatAreCurrentlyAvailable){
+    public Library(Book[] booksThatAreCurrentlyAvailable) {
         this.booksThatAreCurrentlyAvailable = booksThatAreCurrentlyAvailable;
     }
 
@@ -55,7 +56,7 @@ public class Library {
     /**
      * This method will set the Information of books available in Library.
      */
-    public void setMaximumBooksInLibrary(){
+    public void setMaximumBooksInLibrary() {
         booksThatAreCurrentlyAvailable[0].setNameOfTheBook("Java A Beginner's Guide");
         booksThatAreCurrentlyAvailable[0].setNameOfTheAuthorOfTheBook("Herbert Schildt");
         booksThatAreCurrentlyAvailable[0].setThirteenDigitISBNNumberOfTheBook("9781260440225");
@@ -65,5 +66,20 @@ public class Library {
         booksThatAreCurrentlyAvailable[2].setNameOfTheBook("Software Engineering");
         booksThatAreCurrentlyAvailable[2].setNameOfTheAuthorOfTheBook("Robert.C.Martin");
         booksThatAreCurrentlyAvailable[2].setThirteenDigitISBNNumberOfTheBook("9780135974445");
+    }
+
+    /**
+     * This method will show the Information of books available in Library.
+     */
+    public void showAvailableBooks() {
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.printf("|%-36s %-21s %-21s|\n", "Book Name", "Author Name", "13-Digit ISBN Number");
+        System.out.println("----------------------------------------------------------------------------------");
+        for (int libraryIndex = 0; libraryIndex < MAXIMUM_BOOKS_IN_LIBRARY; libraryIndex++) {
+            System.out.printf("|%-36s %-21s %-21s|\n", booksThatAreCurrentlyAvailable[libraryIndex].getNameOfTheBook(),
+                    booksThatAreCurrentlyAvailable[libraryIndex].getNameOfTheAuthorOfTheBook(),
+                    booksThatAreCurrentlyAvailable[libraryIndex].getThirteenDigitISBNNumberOfTheBook());
+        }
+        System.out.println("----------------------------------------------------------------------------------");
     }
 }
