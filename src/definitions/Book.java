@@ -23,4 +23,28 @@ public Book(String nameOfTheBook, String nameOfTheAuthorOfTheBook, String thirte
     this.nameOfTheAuthorOfTheBook = nameOfTheAuthorOfTheBook;
     this.thirteenDigitISBNNumberOfTheBook = thirteenDigitISBNNumberOfTheBook;
 }
+
+    public String getNameOfTheBook() {
+        return nameOfTheBook;
+    }
+
+    public void setNameOfTheBook(String nameOfTheBook) {
+        this.nameOfTheBook = nameOfTheBook;
+    }
+
+    public String getNameOfTheAuthorOfTheBook() {
+        return nameOfTheAuthorOfTheBook;
+    }
+
+    public void setNameOfTheAuthorOfTheBook(String nameOfTheAuthorOfTheBook) {
+        this.nameOfTheAuthorOfTheBook = nameOfTheAuthorOfTheBook;
+    }
+
+    public String getThirteenDigitISBNNumberOfTheBook() {
+        return thirteenDigitISBNNumberOfTheBook;
+    }
+
+    public void setThirteenDigitISBNNumberOfTheBook(String thirteenDigitISBNNumberOfTheBook) {
+        this.thirteenDigitISBNNumberOfTheBook = thirteenDigitISBNNumberOfTheBook;
+    }
 }
