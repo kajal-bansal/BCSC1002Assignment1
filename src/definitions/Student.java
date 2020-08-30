@@ -78,4 +78,22 @@ public class Student {
                 ", theNamesOfTheBooksIssuedByTheStudent=" + Arrays.toString(theNamesOfTheBooksIssuedByTheStudent) +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Student)) return false;
+        Student student = (Student) o;
+        return universityRollNumberOfTheStudent == student.universityRollNumberOfTheStudent &&
+                numberOfBooksIssuedByTheStudent == student.numberOfBooksIssuedByTheStudent &&
+                Objects.equals(nameOfTheStudent, student.nameOfTheStudent) &&
+                Arrays.equals(theNamesOfTheBooksIssuedByTheStudent, student.theNamesOfTheBooksIssuedByTheStudent);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(nameOfTheStudent, universityRollNumberOfTheStudent, numberOfBooksIssuedByTheStudent);
+        result = 31 * result + Arrays.hashCode(theNamesOfTheBooksIssuedByTheStudent);
+        return result;
+    }
 }
