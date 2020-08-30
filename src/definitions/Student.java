@@ -41,15 +41,31 @@ public class Student {
         return nameOfTheStudent;
     }
 
+    public void setNameOfTheStudent(String nameOfTheStudent) {
+        this.nameOfTheStudent = nameOfTheStudent;
+    }
+
     public long getUniversityRollNumberOfTheStudent() {
         return universityRollNumberOfTheStudent;
+    }
+
+    public void setUniversityRollNumberOfTheStudent(long universityRollNumberOfTheStudent) {
+        this.universityRollNumberOfTheStudent = universityRollNumberOfTheStudent;
     }
 
     public int getNumberOfBooksIssuedByTheStudent() {
         return numberOfBooksIssuedByTheStudent;
     }
 
+    public void setNumberOfBooksIssuedByTheStudent(int numberOfBooksIssuedByTheStudent) {
+        this.numberOfBooksIssuedByTheStudent = numberOfBooksIssuedByTheStudent;
+    }
+
     public Book[] getTheNamesOfTheBooksIssuedByTheStudent() {
         return theNamesOfTheBooksIssuedByTheStudent;
+    }
+
+    public void setTheNamesOfTheBooksIssuedByTheStudent(Book[] theNamesOfTheBooksIssuedByTheStudent) {
+        this.theNamesOfTheBooksIssuedByTheStudent = theNamesOfTheBooksIssuedByTheStudent;
     }
 }
