@@ -51,4 +51,19 @@ public class Library {
     public int hashCode() {
         return Arrays.hashCode(booksThatAreCurrentlyAvailable);
     }
+
+    /**
+     * This method will set the Information of books available in Library.
+     */
+    public void setMaximumBooksInLibrary(){
+        booksThatAreCurrentlyAvailable[0].setNameOfTheBook("Java A Beginner's Guide");
+        booksThatAreCurrentlyAvailable[0].setNameOfTheAuthorOfTheBook("Herbert Schildt");
+        booksThatAreCurrentlyAvailable[0].setThirteenDigitISBNNumberOfTheBook("9781260440225");
+        booksThatAreCurrentlyAvailable[1].setNameOfTheBook("Engineering Mathematics");
+        booksThatAreCurrentlyAvailable[1].setNameOfTheAuthorOfTheBook("Chandrika Prasad & Reena Garg");
+        booksThatAreCurrentlyAvailable[1].setThirteenDigitISBNNumberOfTheBook(" 9789386173522");
+        booksThatAreCurrentlyAvailable[2].setNameOfTheBook("Software Engineering");
+        booksThatAreCurrentlyAvailable[2].setNameOfTheAuthorOfTheBook("Robert.C.Martin");
+        booksThatAreCurrentlyAvailable[2].setThirteenDigitISBNNumberOfTheBook("9780135974445");
+    }
 }
